@@ -20,11 +20,11 @@ body {
     letter-spacing: 0.02em;
     background-color: #FFFFFF;
 }
-.page {
-    overflow: hidden;
-}
+
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 .visually-hidden {
     position: absolute;
@@ -42,16 +42,20 @@ img {
     min-width: 320px;
     max-width: 428px;
     padding: 0 16px;
-    margin: 0 auto;  
-    outline: 2px solid red;
+    margin: 0 auto;
+    
+   /* outline: 2px solid red;*/
 }
-@media only screen and (min-width: 768px) {
-    .container {
-        max-width: 736px;
+@media screen and (min-width: 768px) {
+    .container {     
+    max-width: 767px;
+    margin: 0 auto;
     }
 }
-@media only screen and (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
     .container {
-        max-width: 1158px;
+      max-width: 1157px;
+      padding: 0 15px;
+      margin: 0 auto;
     }
 }
